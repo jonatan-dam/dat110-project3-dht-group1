@@ -1,0 +1,692 @@
+# Created at 2025-04-14T01:26:07.006
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (2292@DESKTOP-7IPDI48):
+"main" 
+   java.lang.Thread.State: WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.2/java.lang.Thread.join(Thread.java:2115)
+        at java.base@20.0.2/java.lang.Thread.join(Thread.java:2191)
+        at app//no.hvl.dat110.unit.tests.TestMutex.test(TestMutex.java:67)
+        at java.base@20.0.2/java.lang.invoke.LambdaForm$DMH/0x00000279b75ac000.invokeVirtual(LambdaForm$DMH)
+        at java.base@20.0.2/java.lang.invoke.LambdaForm$MH/0x00000279b75ac800.invoke(LambdaForm$MH)
+        at java.base@20.0.2/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+        at java.base@20.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+        at java.base@20.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+        at java.base@20.0.2/java.lang.reflect.Method.invoke(Method.java:578)
+        at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+        at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+        at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+        at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+        at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+        at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$185/0x00000279b7481a28.apply(Unknown Source)
+        at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+        at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall$$Lambda$186/0x00000279b7488000.apply(Unknown Source)
+        at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+        at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$$Lambda$356/0x00000279b74b2050.apply(Unknown Source)
+        at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+        at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+        at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+        at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+        at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+        at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor$$Lambda$506/0x00000279b75a9098.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+        at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$290/0x00000279b74a5080.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$289/0x00000279b74a4e68.invoke(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$288/0x00000279b74a4a60.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$294/0x00000279b74a5b48.accept(Unknown Source)
+        at java.base@20.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$290/0x00000279b74a5080.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$289/0x00000279b74a4e68.invoke(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$288/0x00000279b74a4a60.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService$$Lambda$294/0x00000279b74a5b48.accept(Unknown Source)
+        at java.base@20.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$290/0x00000279b74a5080.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$289/0x00000279b74a4e68.invoke(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask$$Lambda$288/0x00000279b74a4a60.execute(Unknown Source)
+        at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+        at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+        at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator$$Lambda$243/0x00000279b7492ff0.accept(Unknown Source)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+        at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+        at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+        at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+        at app//org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:55)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:223)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:175)
+        at app//org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:139)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@20.0.2/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+        at java.base@20.0.2/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:339)
+        at java.base@20.0.2/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+        at java.base@20.0.2/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+        at java.base@20.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+        at java.base@20.0.2/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+        at java.base@20.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+        at java.base@20.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@20.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@20.0.2/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@20.0.2/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:191)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:683)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:80)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:368)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:426)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:438)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Accept-9091" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.accept(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:746)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:690)
+        at java.base@20.0.2/java.net.ServerSocket.platformImplAccept(ServerSocket.java:655)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:631)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:588)
+        at java.base@20.0.2/java.net.ServerSocket.accept(ServerSocket.java:546)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Accept-0" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.accept(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:746)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:690)
+        at java.base@20.0.2/java.net.ServerSocket.platformImplAccept(ServerSocket.java:655)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:631)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:588)
+        at java.base@20.0.2/java.net.ServerSocket.accept(ServerSocket.java:546)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI Reaper" 
+   java.lang.Thread.State: WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+        at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+        at java.base@20.0.2/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+        at java.base@20.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+        at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:67)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:234)
+        at java.rmi@20.0.2/sun.rmi.transport.ObjectTable$Reaper.run(ObjectTable.java:352)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI GC Daemon" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.rmi@20.0.2/sun.rmi.transport.GC$Daemon.run(GC.java:127)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+        at java.base@20.0.2/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+"Timer-0" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.2/java.util.TimerThread.mainLoop(Timer.java:563)
+        at java.base@20.0.2/java.util.TimerThread.run(Timer.java:516)
+
+"RMI TCP Accept-9092" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.accept(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:746)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:690)
+        at java.base@20.0.2/java.net.ServerSocket.platformImplAccept(ServerSocket.java:655)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:631)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:588)
+        at java.base@20.0.2/java.net.ServerSocket.accept(ServerSocket.java:546)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI Scheduler(0)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+        at java.base@20.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@20.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI RenewClean-[192.168.87.20:54589]" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+        at java.base@20.0.2/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+        at java.rmi@20.0.2/sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:567)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(2)-192.168.87.20" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/java.lang.Thread.sleep0(Native Method)
+        at java.base@20.0.2/java.lang.Thread.sleep(Thread.java:484)
+        at app//no.hvl.dat110.middleware.MutualExclusion.doMutexRequest(MutualExclusion.java:78)
+        at app//no.hvl.dat110.middleware.Node.requestMutexWriteOperation(Node.java:191)
+        at java.base@20.0.2/java.lang.invoke.LambdaForm$DMH/0x00000279b75ad000.invokeInterface(LambdaForm$DMH)
+        at java.base@20.0.2/java.lang.invoke.LambdaForm$MH/0x00000279b75b4000.invoke(LambdaForm$MH)
+        at java.base@20.0.2/java.lang.invoke.LambdaForm$MH/0x00000279b749c400.invokeExact_MT(LambdaForm$MH)
+        at java.base@20.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:157)
+        at java.base@20.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+        at java.base@20.0.2/java.lang.reflect.Method.invoke(Method.java:578)
+        at java.rmi@20.0.2/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+        at java.rmi@20.0.2/sun.rmi.transport.Transport$1.run(Transport.java:200)
+        at java.rmi@20.0.2/sun.rmi.transport.Transport$1.run(Transport.java:197)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:809)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:714)
+        at java.rmi@20.0.2/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(3)-192.168.87.20" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:71)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"Timer-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.2/java.util.TimerThread.mainLoop(Timer.java:563)
+        at java.base@20.0.2/java.util.TimerThread.run(Timer.java:516)
+
+"RMI TCP Accept-9093" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.accept(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:746)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:690)
+        at java.base@20.0.2/java.net.ServerSocket.platformImplAccept(ServerSocket.java:655)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:631)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:588)
+        at java.base@20.0.2/java.net.ServerSocket.accept(ServerSocket.java:546)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"Timer-2" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.2/java.util.TimerThread.mainLoop(Timer.java:563)
+        at java.base@20.0.2/java.util.TimerThread.run(Timer.java:516)
+
+"RMI TCP Connection(4)-192.168.87.20" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:71)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Accept-9094" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.accept(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:746)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:690)
+        at java.base@20.0.2/java.net.ServerSocket.platformImplAccept(ServerSocket.java:655)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:631)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:588)
+        at java.base@20.0.2/java.net.ServerSocket.accept(ServerSocket.java:546)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"Timer-3" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.2/java.util.TimerThread.mainLoop(Timer.java:563)
+        at java.base@20.0.2/java.util.TimerThread.run(Timer.java:516)
+
+"RMI TCP Connection(5)-192.168.87.20" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:71)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Accept-9095" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.accept(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:746)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:690)
+        at java.base@20.0.2/java.net.ServerSocket.platformImplAccept(ServerSocket.java:655)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:631)
+        at java.base@20.0.2/java.net.ServerSocket.implAccept(ServerSocket.java:588)
+        at java.base@20.0.2/java.net.ServerSocket.accept(ServerSocket.java:546)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:424)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:388)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"Timer-4" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.2/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.2/java.util.TimerThread.mainLoop(Timer.java:563)
+        at java.base@20.0.2/java.util.TimerThread.run(Timer.java:516)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(7)-192.168.87.20" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:71)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"Thread-6" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:201)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+        at java.base@20.0.2/java.io.DataInputStream.readByte(DataInputStream.java:268)
+        at java.rmi@20.0.2/sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:241)
+        at java.rmi@20.0.2/sun.rmi.server.UnicastRef.invoke(UnicastRef.java:166)
+        at java.rmi@20.0.2/java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:215)
+        at java.rmi@20.0.2/java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:160)
+        at app/jdk.proxy2/jdk.proxy2.$Proxy23.requestMutexWriteOperation(Unknown Source)
+        at app//no.hvl.dat110.unit.tests.TestMutex$FileUpdater.run(TestMutex.java:110)
+
+"RMI TCP Connection(9)-192.168.87.20" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:71)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(17)-192.168.87.20" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:71)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(18)-192.168.87.20" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.2/sun.nio.ch.Net.poll(Native Method)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
+        at java.base@20.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:794)
+        at java.base@20.0.2/java.net.Socket$SocketInputStream.read(Socket.java:1025)
+        at java.base@20.0.2/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+        at java.base@20.0.2/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+        at java.base@20.0.2/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+        at java.base@20.0.2/java.io.FilterInputStream.read(FilterInputStream.java:71)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:580)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$464/0x00000279b75ebca8.run(Unknown Source)
+        at java.base@20.0.2/java.security.AccessController.executePrivileged(AccessController.java:778)
+        at java.base@20.0.2/java.security.AccessController.doPrivileged(AccessController.java:400)
+        at java.rmi@20.0.2/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+"RMI TCP Connection(idle)" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@20.0.2/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.2/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.2/java.lang.Thread.run(Thread.java:1623)
+
+
+
